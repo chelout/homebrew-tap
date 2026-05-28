@@ -1,6 +1,6 @@
-# homebrew-rtk
+# homebrew-tap
 
-Homebrew tap for [`chelout/rtk`](https://github.com/chelout/rtk) — a personal fork of
+Personal Homebrew tap for [`chelout/rtk`](https://github.com/chelout/rtk) — a fork of
 [`rtk-ai/rtk`](https://github.com/rtk-ai/rtk) (Rust Token Killer) with extra features:
 
 - **Smart `grep`/`rg` rewrite** — `grep -rn pattern src/` → `rtk grep pattern src/`.
@@ -9,28 +9,28 @@ Homebrew tap for [`chelout/rtk`](https://github.com/chelout/rtk) — a personal 
 ## Install
 
 ```bash
-brew tap chelout/rtk
-brew install chelout/rtk/rtk
+brew tap chelout/tap
+brew install chelout/tap/rtk
 ```
 
 On **macOS arm64** this installs a prebuilt binary (no Rust required). On other
 platforms it builds from source (Rust is pulled in as a build dependency).
 
 > If you already have the upstream `rtk` from `homebrew-core`, uninstall it first
-> (`brew uninstall rtk`) to avoid a link conflict, since both provide `bin/rtk`.
+> (`brew uninstall rtk`) to avoid a conflict, since both provide the `rtk` keg/binary.
 
 ## Update
 
 ```bash
 brew update
-brew upgrade chelout/rtk/rtk
+brew upgrade chelout/tap/rtk
 ```
 
 ## Uninstall
 
 ```bash
-brew uninstall chelout/rtk/rtk
-brew untap chelout/rtk
+brew uninstall rtk
+brew untap chelout/tap
 ```
 
 ## Releasing a new version (maintainer)
