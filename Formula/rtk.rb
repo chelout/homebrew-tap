@@ -6,16 +6,16 @@ class Rtk < Formula
   desc "CLI proxy that minimizes LLM token consumption (chelout fork)"
   homepage "https://github.com/chelout/rtk"
   # Default (source) download — used on every platform except macOS arm64.
-  url "https://github.com/chelout/rtk/archive/refs/tags/v0.42.0-fork.1.tar.gz"
-  version "0.42.0-fork.1"
-  sha256 "d88be1d7a00849489130bea75ebc895bc82c7a228d8a463b53466aa780118169"
+  url "https://github.com/chelout/rtk/archive/refs/tags/v0.42.1-fork.1.tar.gz"
+  version "0.42.1-fork.1"
+  sha256 "c7df0dffedc1501fb3362c20fbb6b8a2e554223422b859d765a36940570aea33"
   license "Apache-2.0"
 
   # macOS arm64: override with the prebuilt binary release asset.
   on_macos do
     on_arm do
-      url "https://github.com/chelout/rtk/releases/download/v0.42.0-fork.1/rtk-aarch64-apple-darwin.tar.gz"
-      sha256 "25b0c31b669919d211322dacfe0b493f001fbefca860d0af4ff2e8b6f20248fd"
+      url "https://github.com/chelout/rtk/releases/download/v0.42.1-fork.1/rtk-aarch64-apple-darwin.tar.gz"
+      sha256 "b015329ec017eaa755f73418f0ad6973ca3b2e91c72c504cdc416afd37d83669"
     end
   end
 
